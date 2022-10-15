@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Meal Finder</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 onclick="location.reload()">Meal Finder</h1>
+      <div class="flex">
+        <form class="flex" id="submit">
+          <input
+            type="text"
+            id="search"
+            placeholder="Search for meals or keywords"
+          />
+          <button class="search-btn" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+        <button class="random-btn" id="random">
+          <i class="fas fa-random"></i>
+        </button>
+      </div>
+      <div id="areafood">
+        <img src="./img/americaFlag.png" alt="American" data-area="American">
+        <img src="./img/canadaFlag.png" alt="Canadian" data-area="Canadian">
+        <img src="./img/chinaFlag.png" alt="Chinese" data-area="Chinese">
+        <img src="./img/croatiaFlag.png" alt="Croatian" data-area="Croatian">
+        <img src="./img/egyptFlag.png" alt="Egyptian" data-area="Egyptian">
+        <img src="./img/frenchFlag.png" alt="French" data-area="French">
+        <img src="./img/greeceFlag.png" alt="Greek" data-area="Greek">
+        <img src="./img/indiaFlag.png" alt="Indian" data-area="Indian">
+        <img src="./img/irishFlag.png" alt="Irish" data-area="Irish">
+        <img src="./img/italianFlag.png" alt="Italian" data-area="Italian">
+        <img src="./img/jamaicanFlag.png" alt="Jamaican" data-area="Jamaican">
+        <img src="./img/japanFlag.png" alt="Japanese" data-area="Japanese">
+        <img src="./img/kenyanFlag.png" alt="Kenyan" data-area="Kenyan">
+        <img src="./img/malasyiaFlag.png" alt="Malaysian" data-area="Malaysian">
+        <img src="./img/mexicanFlag.png" alt="Mexican" data-area="Mexican">
+        <img src="./img/MoroccanFlag.png" alt="Moroccan" data-area="Moroccan">
+        <img src="./img/polandFlag.png" alt="Polish" data-area="Polish">
+        <img src="./img/UkFlag.png" alt="British" data-area="British">
+      </div>
+      <div id="result-heading"></div>
+      <div id="meals" class="meals"></div>
+      <div id="single-meal"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
